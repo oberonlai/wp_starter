@@ -1,3 +1,7 @@
+# [Modify by DotcreativeStudo](http://dotcreativestudio.com/wordpress-starter-theme/)
+* Change the folder structure
+* Add some useful api
+
 # [HTML5 Blank](http://html5blank.com)
 
 Powerful shell for rapidly deploying your WordPress projects.

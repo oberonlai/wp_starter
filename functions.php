@@ -111,6 +111,7 @@ add_action('init', 'html5wp_pagination');
 add_action('login_head', 'new_login_logo' );
 add_action('wp_dashboard_setup', 'wpc_dashboard_widgets');
 add_action('init', 'mycpt');
+add_action('admin_footer', 'custom_admin_res');
 add_filter('body_class', 'add_slug_to_body_class');
 add_filter('widget_text', 'do_shortcode');
 add_filter('widget_text', 'shortcode_unautop');

@@ -27,4 +27,10 @@ function wpc_dashboard_widgets() {
     unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);            // WordPress Blog
     unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);          // Other WordPress News
 }
+
+/* 在後臺加入自訂 JS、CSS */ 
+function custom_admin_res() {
+    // $url = get_bloginfo('template_directory') . '/js/custom-wp-admin.js';
+    // echo '<script src="'. $url . '"></script>';
+}
 ?>

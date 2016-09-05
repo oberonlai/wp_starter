@@ -1,6 +1,6 @@
 			<footer class="footer" role="contentinfo">
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
+					Proudly powered by <a href="https://tw.wordpress.org" target="_blank">WordPress</a> | &copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
 				</p>
 			</footer>
 		</div>

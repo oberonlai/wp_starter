@@ -101,4 +101,16 @@ function getImage() {
         echo $first_img;
     }
 }
+// 如果沒設摘要，取得內文第一段做為摘要
+function get_first_paragraph(){
+    global $post;
+    if(get_the_excerpt()){
+        return get_the_excerpt();
+    } else {
+        $str = wpautop( get_the_content() );
+        $str = substr( $str, 0, strpos( $str, '</p>' ) + 4 );
+        $str = strip_tags($str, '<a><strong><em>');
+        return $str;
+    }
+}
 ?>

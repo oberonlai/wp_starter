@@ -33,4 +33,9 @@ function custom_admin_res() {
     // $url = get_bloginfo('template_directory') . '/js/custom-wp-admin.js';
     // echo '<script src="'. $url . '"></script>';
 }
+/* 允許後臺上傳 svg */
+function cc_mime_types( $mimes ){
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
 ?>

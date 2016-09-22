@@ -131,6 +131,7 @@ add_filter('admin_footer_text', 'change_footer_admin', 9999);
 add_filter( 'update_footer', 'change_footer_version', 9999);
 add_filter('show_admin_bar', '__return_false');
 add_filter('xmlrpc_enabled', '__return_false');
+add_filter( 'upload_mimes', 'cc_mime_types' );
 remove_action('wp_head', 'feed_links_extra', 3);
 remove_action('wp_head', 'feed_links', 2);
 remove_action('wp_head', 'rsd_link');

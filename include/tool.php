@@ -108,8 +108,7 @@ function get_first_paragraph(){
         return get_the_excerpt();
     } else {
         $str = wpautop( get_the_content() );
-        $str = substr( $str, 0, strpos( $str, '</p>' ) + 4 );
-        $str = strip_tags($str, '<a><strong><em>');
+        $str = strip_tags(str_replace(array("<q>", "</q>"), array("_", "_"), $str));
         return $str;
     }
 }

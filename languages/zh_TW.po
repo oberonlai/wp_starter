@@ -26,11 +26,11 @@ msgstr "返回首頁"
 
 #: ../archive.php:6
 msgid "Archives"
-msgstr "庫存頁"
+msgstr "存檔頁"
 
 #: ../author.php:8
 msgid "Author Archives for "
-msgstr "庫存頁的作者"
+msgstr "存檔頁的作者"
 
 #: ../author.php:41 ../loop.php:22 ../single.php:27
 msgid "Published by"
@@ -67,7 +67,7 @@ msgstr "留言關閉中"
 
 #: ../footer.php:6
 msgid "Powered by"
-msgstr "技術支持"
+msgstr "架站系統："
 
 #: ../functions.php:174
 #, php-format
@@ -89,7 +89,7 @@ msgstr "(編輯)"
 
 #: ../functions.php:209
 msgid "Header Menu"
-msgstr "頂部選單"
+msgstr "頁首選單"
 
 #: ../functions.php:210
 msgid "Sidebar Menu"
@@ -117,7 +117,7 @@ msgstr "檢視文章"
 
 #: ../functions.php:438 ../functions.php:439
 msgid "HTML5 Blank Custom Post"
-msgstr "自定義文章類型"
+msgstr "自訂文章類型"
 
 #: ../functions.php:440
 msgid "Add New"
@@ -170,7 +170,7 @@ msgstr "搜尋"
 
 #: ../single.php:35
 msgid "Tags: "
-msgstr "標籤： "
+msgstr "標籤："
 
 #: ../single.php:37
 msgid "Categorised in: "
@@ -178,11 +178,11 @@ msgstr "分類："
 
 #: ../single.php:39
 msgid "This post was written by "
-msgstr "作者為"
+msgstr "作者："
 
 #: ../tag.php:6
 msgid "Tag Archive: "
-msgstr "標籤庫存頁："
+msgstr "標籤存檔頁："
 
 #~ msgid "%s results for "
 #~ msgstr "%s Ergebnisse für "

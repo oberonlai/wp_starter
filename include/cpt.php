@@ -35,4 +35,5 @@ function mycpt(){
         )
     ));
 }
+add_action('init', 'mycpt');
 ?>

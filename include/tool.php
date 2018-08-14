@@ -17,6 +17,10 @@ function add_slug_to_body_class($classes) {
     }
     return $classes;
 }
+add_filter('body_class', 'add_slug_to_body_class');
+
+
+
 // 分頁導覽
 function html5wp_pagination() {
     global $wp_query;
@@ -28,6 +32,10 @@ function html5wp_pagination() {
         'total' => $wp_query->max_num_pages
     ));
 }
+add_action('init', 'html5wp_pagination');
+
+
+
 // 判斷所在位置取得頁面標題
 function getTitle(){
     if( is_page('home') ) { echo ""; }
@@ -36,6 +44,9 @@ function getTitle(){
     elseif(is_404()) { echo '頁面錯誤'; } 
     echo ' | '.get_bloginfo('title');
 }
+
+
+
 // 如果文章有 tag 的話，則拿來做為 meta keyword
 function getKeyword(){
     $posttags = get_the_tags(); 
@@ -54,6 +65,9 @@ function getKeyword(){
         echo "'>\n";
     }
 }
+
+
+
 // 判斷所在位置取得頁面描述
 function getDesp(){
     if(empty(get_the_excerpt())){
@@ -72,10 +86,16 @@ function getAuthor(){
         echo "'>\n";
     }
 }
+
+
+
 // 限制字數，第一個參數丟字串，第二個丟字數
 function mySubstr($str,$num){
     return mb_substr($str,0,$num,'utf8');
 }
+
+
+
 // 增加 current menu 的 class 為 active
 function special_nav_class($classes, $item){
     if( in_array('current-menu-item', $classes) ){
@@ -83,6 +103,9 @@ function special_nav_class($classes, $item){
     }
     return $classes;
 }
+
+
+
 // 文章沒設特色圖片時會自動抓第一張圖片顯示
 function getImage() {
     global $post, $posts;
@@ -101,6 +124,9 @@ function getImage() {
         echo $first_img;
     }
 }
+
+
+
 // 如果沒設摘要，取得內文第一段做為摘要
 function get_first_paragraph(){
     global $post;
@@ -112,4 +138,6 @@ function get_first_paragraph(){
         return $str;
     }
 }
+
+
 ?>
